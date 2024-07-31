@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+html{
+    background-color: #FFF7F1;
+}
+html, label, input, textarea::placeholder{
+    font-family: "Roboto Slab", serif;
+}
+html, body { 
+    max-width: 100%; 
+    overflow-x: hidden;
+ } 
+*{
+    margin: 0;
+    padding: 0;
+}
+.clasic-btn a{
+    text-decoration: none;
+    -webkit-text-decoration: none;
+    padding: 15px 20px;
+    background-color: #61677A;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #61677A;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.clasic-btn a:hover{
+    background-color: transparent;
+    border: 2px solid #61677A;
+    color: #61677A;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.banner img{
+    position: absolute;
+    width: 100%;
+    animation: slider-banner 20s ease-in-out infinite;
+    -webkit-animation: slider-banner 20s ease-in-out infinite;
+    -moz-animation: slider-banner 20s ease-in-out infinite;
+    -o-animation: slider-banner 20s ease-in-out infinite;
+    opacity: 0;
+}
+.img1 img{
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    -o-animation-delay: -1s;
+}
+.img2 img{
+    animation-delay: 9s;
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -o-animation-delay: 9s;
+}
+.container-btn{
+    position: relative;
+    z-index: 10;
+    width: 400px;
+    height: 100%;
+    float: right;
+  }
+  
+  .banner-btn{
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 200px;
+  }
+  .content{
+    clear: both;
+  }
+@keyframes slider-banner {
+    0%{
+        opacity: 0;
+    }
+    10%, 50%{
+        opacity: 1;
+    }
+    60%, 100%{
+        opacity: 0;
+    }
+}
+@-webkit-keyframes slider-banner {
+    0%{
+        opacity: 0;
+    }
+    10%, 50%{
+        opacity: 1;
+    }
+    60%, 100%{
+        opacity: 0;
+    }
+}
+@-moz-keyframes slider-banner {
+    0%{
+        opacity: 0;
+    }
+    10%, 50%{
+        opacity: 1;
+    }
+    60%, 100%{
+        opacity: 0;
+    }
+}
+@-ms-keyframes slider-banner {
+    0%{
+        opacity: 0;
+    }
+    10%, 50%{
+        opacity: 1;
+    }
+    60%, 100%{
+        opacity: 0;
+    }
+}
+@-o-keyframes slider-banner {
+    0%{
+        opacity: 0;
+    }
+    10%, 50%{
+        opacity: 1;
+    }
+    60%, 100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .banner{
+      height: 700px;
+    }
+    .container-btn{
+      width: 450px;
+    }
+  }
+  @media screen and (max-width: 1600px) {
+    .banner{
+      height: 680px;
+    }
+    .container-btn{
+      width: 450px;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .banner{
+      height: 630px;
+  }
+  .container-btn{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1400px) {
+    .container-btn{
+      width: 350px;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+      .container-btn{
+        width: 350px;
+      }
+      .container-btn{
+        width: 350px;
+      }
+  }
+  @media screen and (max-width: 1200px) {
+    .banner-btn{
+        top: 65%
+    } 
+    .banner{
+        max-height: 500px;
+    }
+
+}
+@media screen and (max-width: 1100px) {
+    .container-btn{
+      width: 300px;
+    }
+    .banner{
+        max-height: 470px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .banner{
+        max-height: 430px;
+    }
+    .container-btn{
+      width: 250px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .banner-btn{
+        top: 60%;
+    }
+    .container-btn{
+      width: 230px;
+    }
+    .clasic-btn a{
+        font-size: 18px;
+    }
+    .banner{
+        max-height: 400px;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .container-btn{
+      width: 180px;
+    }
+    .clasic-btn a{
+        font-size: 18px;
+        padding: 10px;
+    }
+    .banner{
+        max-height: 340px;
+    }
+}
+@media screen and (min-width: 701px) {
+    .img-tableta, .img-telefon{
+        display: none;
+    }
+    .img-monitor{
+        display: block;
+    }
+}
+@media screen and (max-width: 700px) {
+    .img-tableta{
+        display: block;
+    }
+    .img-monitor{
+        display: none;
+    }
+    .banner{
+        max-height: 580px;
+    }
+    .banner-btn{
+      top: 85%;
+    }
+    .container-btn{
+      width: 400px;
+      float: left;
+      }
+}
+@media screen and (max-width: 600px) {
+    .banner-btn{
+    top: 75%;
+    }
+    .container-btn{
+      width: 300px;
+    }
+    .banner{
+        max-height: 570px;
+    }
+}
+@media screen and (min-width: 499px) and (max-width: 700px){
+    .img-tableta{
+        display: block;
+    }
+    .img-telefon{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .img-telefon{
+        display: block;
+    }
+    .img-tableta{
+        display: none;
+    }
+    .banner{
+        max-height: 570px;
+    }
+    .banner-btn{
+        top: 90%;
+        left: 55%;
+    }
+    .container-btn{
+      width: 100%;
+      float: none;
+    }
+    .clasic-btn a{
+       padding: 8px;
+       border-radius: 8px;
+       -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .banner{
+        max-height: 445px;
+    }
+    .clasic-btn a{
+        font-size: 15px; 
+        padding: 5px; 
+    }
+}
+@media screen and (max-width:300px) {
+    .banner{
+        max-height: 320px;
+    }
+    .banner-btn{
+        left: 65%;
+    }
+    .clasic-btn a{
+        font-size: 13px; 
+        padding: 5px; 
+    }
+}
