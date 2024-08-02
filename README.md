@@ -29,4 +29,13 @@
   <img src="Img/carousel HTML + CSS.png" width="100%">
 </div>
 
+<h3>Carousel js: </h3>
+<p>This section of the code manages a carousel of items that can be navigated using "Next" and "Previous" buttons. The carousel updates smoothly and adjusts to different screen sizes.</p>
+<p>This JavaScript code initializes a carousel with eight items, allowing navigation through "Next" and "Previous" buttons. The nextSlide and prevSlide functions handle the navigation logic, while the updateCarousel function updates the position of each item in the carousel. The carousel is set to automatically advance every 4 seconds and adjust when the window is resized.</p>
+<p>This CSS code styles the carousel container and items. It uses Flexbox to center and align the items and includes media queries to adjust the carousel's width for different screen sizes. The CSS also ensures that the carousel items are properly positioned and animated, providing a smooth transition effect.</p>
+
+ <div>
+    <img src="Img/Carousel js.png" width="100%">
+</div>
+
 
