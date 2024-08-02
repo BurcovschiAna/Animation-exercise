@@ -17,7 +17,8 @@
 </ul>
 <p>I have tailored the code to ensure compatibility with different browsers and devices. This includes using vendor prefixes for CSS properties and media queries for responsive design.</p>
 
-<video width="100%" controls>
-  <source src="Img/Slider HTML+CSS.webm" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; ">
+    <img src="Img/Slider HTML+CSS desktop version.png" width="100%">        
+    <img src="Img/Slider HTML+CSS telephone version.png" width="50%">
+    <img src="Img/Slider HTML+CSS iPad version.png" width="50%">
+</div>
