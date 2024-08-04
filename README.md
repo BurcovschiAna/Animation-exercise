@@ -30,7 +30,7 @@
 <h3>The Carousel HTML + CSS: </h3>
 <p>This code defines the styling and animations for a sponsor section on a web page. The :root selector defines CSS variables for consistent styling across the entire document. The common classes apply general styles to all elements and reset margins and paddings for a consistent layout. The keyframe animation slider-sponsor animates the sponsor images, making them slide smoothly across the screen. The CSS includes various vendor prefixes to ensure compatibility with older browsers and different rendering engines.</p>
 <h3>
-  Here is a picture of the carousel HTML + CSS
+  Here is a picture of the Carousel HTML + CSS
 </h3>
 <div>
   <img src="Img/carousel HTML + CSS.png" width="100%">
