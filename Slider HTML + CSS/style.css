@@ -1,3 +1,4 @@
+/* BASIC STYLE */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 html{
     background-color: #FFF7F1;
@@ -13,6 +14,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+/* COMON CLASSES THROUGH HTML */
 .clasic-btn a{
     text-decoration: none;
     -webkit-text-decoration: none;
@@ -36,6 +38,7 @@ html, body {
     color: #61677A;
 }
 
+/* STYLE FOR THE SLIDE */
 .banner{
     position: relative;
     width: 100%;
@@ -86,6 +89,7 @@ html, body {
   .content{
     clear: both;
   }
+/* SLIDER ANIMATION ADAPDET FOR DIFERNT BROWSERS USING VENDOR PREFIXES  */
 @keyframes slider-banner {
     0%{
         opacity: 0;
@@ -141,7 +145,7 @@ html, body {
         opacity: 0;
     }
 }
-
+/* ADAPTING THE SLIDE FOR DIFFERENT DEVICES USING @MEDIA*/
 @media screen and (min-width: 1600px) {
     .banner{
       height: 700px;
