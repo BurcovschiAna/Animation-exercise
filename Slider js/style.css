@@ -19,6 +19,7 @@
 body{
     background-color: var(--bg-page);
 }
+/* COMON CLASSES THROUGH HTML */
 .flexbox{
     display: -webkit-box;
     display: -moz-box;
@@ -62,9 +63,7 @@ body{
     box-shadow: var(--box-shadow-10b);
 }
 
-
-
-
+/* STYLE FOR THE SLIDE */
 .bg-news-section{
     background-color: var(--bg-page-2);
     margin: 122px 0;
@@ -138,6 +137,8 @@ body{
     background-color: var(--bg-btn);
     transition: background-color 1s ease-in-out, box-shadow 0.5s ease-in-out;
 }
+
+/* ADAPTING THE SLIDE FOR DIFFERENT DEVICES USING @MEDIA*/
 @media screen and (max-width: 900px) {
     * > .subtitle{
         font-size: 25px;
