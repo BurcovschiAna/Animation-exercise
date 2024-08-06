@@ -1,3 +1,4 @@
+/* BASIC STYLE */
 :root{
     --bg-btn: #F05670;
     --color-btn: #FFFFFF;
@@ -20,6 +21,7 @@
 body{
     background-color: var(--bg-page);
 }
+/* COMON CLASSES THROUGH HTML */
 .flexbox{
     display: -webkit-box;
     display: -moz-box;
@@ -49,7 +51,7 @@ body{
 .box-shadow-10{
     box-shadow: var(--box-shadow-10b);
 }
-
+/* STYLE FOR THE CAROUSEL */
 .about-news-section{
     max-width: 1210px;
     margin: 0 auto;
@@ -116,7 +118,7 @@ body{
 .data-news{
     opacity: 0.5;
 }
-
+/* THE ANIMATION ITSELF  */
 @keyframes carousel-about-news {
     0%, 31%{
         transform: translateX(-120%) rotateY(-5deg);
@@ -135,7 +137,7 @@ body{
         opacity: 0;
     }
 }
-
+/* ADAPTING THE SLIDE FOR DIFFERENT DEVICES USING @MEDIA*/
 @media screen and (max-width: 1100px) {
     @keyframes carousel-about-news {
         0%, 31%{
