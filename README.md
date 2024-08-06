@@ -111,5 +111,35 @@
        <img src="Img/Slider js.png" width="100%">
     </div>
 
+<h3>Slider CSS + JS : </h3>
+<h4>
+        Features :
+    </h4>
+    <ul>
+        <li>
+            Custom Properties: Utilizes CSS variables for easy theming and styling adjustments.
+        </li>
+        <li>
+            Responsive Flexbox Layout: Ensures a flexible, responsive design.
+        </li>
+        <li>
+            Smooth 3D Animations: Items rotate and translate smoothly within a 3D space.
+        </li>
+        <li>
+            Interactive Navigation: Previous and next buttons allow users to navigate through items.
+        </li>
+        <li>
+            Automatic and Manual Control: The carousel automatically advances items, with manual override options via buttons.
+        </li>
+    </ul>
+    <p>
+        The keyframes define the 3D rotation and translation animations. JavaScript handles the animation delays and button interactions for navigating the carousel.
+    </p>
+<h3>
+  Here is a picture of the Slider CSS + JS
+</h3>
+<div>
+    <img src="Img/Slider CSS + JS.png" width="100%">
+</div>
     
 
