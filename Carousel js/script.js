@@ -33,9 +33,15 @@ function updateCarousel() {
     let offset = (index - currentIndex + itemCount) % itemCount;
     item.style.transform = `translateX(${offset * (itemWidth + gap)}px)`;
   });
+  resetInterval()
 }
 
-// Auto-transition every 4 seconds
-window.setInterval(nextSlide, 4000);
+// Auto-transition every 6 seconds
+let slideInterval = window.setInterval(nextSlide, 6000);
+// Reset the interval when clicked on a button
+function resetInterval() {
+  clearInterval(slideInterval);
+  slideInterval = window.setInterval(nextSlide, 6000);   
+}
 window.addEventListener('resize', updateCarousel);
 updateCarousel();

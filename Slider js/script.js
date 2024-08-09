@@ -18,12 +18,16 @@ const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 
 // Add event listeners to buttons
-prevBtn.addEventListener("click", prevSlideBtn);
-nextBtn.addEventListener("click", nextSlideBtn);
+prevBtn.addEventListener("click", prevSlideNews);
+nextBtn.addEventListener("click", nextSlideNews);
 
-// Auto-transition every 7 seconds
-window.setInterval(nextSlideBtn, 7000);
-
+// Auto-transition every 7 seconds for Slider News
+let slideInterval = window.setInterval(nextSlideNews, 7000);
+// Reset the interval when clicked on a button
+function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = window.setInterval(nextSlideNews, 7000);   
+}
 // Update slide and dot classes
 function updateSlide(currentSlide, targetSlide){
     currentSlide.classList.remove("active");
@@ -35,7 +39,7 @@ function updateDots(currentDot, targetDot){
     targetDot.classList.add("active-dot");
 }
 // Navigate to the next slide
-function nextSlideBtn(){
+function nextSlideNews(){
     const currentSlide = document.querySelector(".active");
     let nextSlide = currentSlide.nextElementSibling; 
     const currentDot = document.querySelector(".active-dot");
@@ -45,11 +49,12 @@ function nextSlideBtn(){
         nextDot = dots[0];
     }
     updateSlide(currentSlide, nextSlide); 
-    updateDots(currentDot, nextDot);  
+    updateDots(currentDot, nextDot); 
+    resetInterval() 
 };
 
 // Navigate to the previous slide
-function prevSlideBtn(){
+function prevSlideNews(){
     const currentSlide = document.querySelector(".active");
     let prevSlide = currentSlide.previousElementSibling;
     const currentDot = document.querySelector(".active-dot");
@@ -60,6 +65,7 @@ function prevSlideBtn(){
     }
     updateSlide(currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
+    resetInterval()
 };
 
 // Navigate using dots
@@ -74,4 +80,5 @@ function navDots (e){
     const targetSlide = slides[targetIndex];
     updateDots(currentDot, targetDot);
     updateSlide(currentSlide, targetSlide, currentDot);
+    resetInterval()
 }
